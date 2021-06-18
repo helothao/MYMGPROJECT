@@ -135,7 +135,7 @@ require('./config/dbconnexion.php')
             <div class="filtres">
                 <div class="filtreItem">
                     <label for="type"> Vous recherchez une banque pour : </label>
-                    <select class="champFormulaire" name="type">
+                    <select class="champFormulaire" name="type" required >
                         <option value="">Sélectionnez une option</option>
                         <option value="Investir" <?php if (isset($_GET['type']) && $_GET['type'] === 'Investir') echo 'selected'; ?>>Investir</option>
                         <option value="Epargner" <?php if (isset($_GET['type']) && $_GET['type'] === 'Epargner') echo 'selected'; ?>>Epargner</option>
