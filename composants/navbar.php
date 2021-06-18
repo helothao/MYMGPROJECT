@@ -1,7 +1,7 @@
-<header class="u-clearfix u-header u-header" id="sec-238b">
+<header class="u-clearfix u-header u-header" style="background: white;border-bottom: 10px solid #448B2B;" id="sec-238b">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1326" data-image-height="882">
-        <img src="images/200930789_200446098612759_2343269356248476456_n.png" class="u-logo-image u-logo-image-1"
+        <img src="./images/logo.png" class="u-logo-image u-logo-image-1"
           data-image-width="116" />
       </a>
       <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
@@ -26,11 +26,11 @@
           <ul class="u-custom-font u-font-courier-new u-nav u-unstyled u-nav-1">
             <li class="u-nav-item">
               <a class="u-button-style u-nav-link u-text-active-palette-4-dark-2 u-text-hover-palette-4-dark-1"
-                href="Trouver-une-banque.html" style="padding: 10px 20px">Trouver une banque</a>
+                href="index.php" style="padding: 10px 20px">Trouver une banque</a>
             </li>
             <li class="u-nav-item">
               <a class="u-button-style u-nav-link u-text-active-palette-4-dark-2 u-text-hover-palette-4-dark-1"
-                href="A-propos-du-projet.html" style="padding: 10px 20px">A propos du projet</a>
+                href="about.php" style="padding: 10px 20px">A propos du projet</a>
             </li>
           </ul>
         </div>
