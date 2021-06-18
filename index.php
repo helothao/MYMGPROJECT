@@ -127,7 +127,7 @@ require('./config/dbconnexion.php')
     <?php require('./composants/navbar.php') ?>
 
     <div class="pageHeader">
-        <h2>TROUVER UNE BANQUE</h2>
+        <h2>TROUVER UNE BANQUE RESPONSABLE</h2>
     </div>
 
     <div class="contenuPage">
@@ -145,7 +145,7 @@ require('./config/dbconnexion.php')
                 <div class="filtreItem">
                     <label for="theme"> Sélectionnez les valeurs qui vous sont chères : </label>
                     <select class="champFormulaire" name="theme">
-                        <option value="">--Selectionnez une option</option>
+                        <option value="">Sélectionnez une option</option>
                         <option value="Engagement environnemental" <?php if (isset($_GET['theme']) && $_GET['theme'] === 'Engagement environnemental') echo 'selected'; ?>>Engagement environnemental</option>
                         <option value="Engagement social" <?php if (isset($_GET['theme']) && $_GET['theme'] === 'Engagement social') echo 'selected'; ?>>Engagement social</option>
                     </select>
@@ -159,7 +159,7 @@ require('./config/dbconnexion.php')
 
             <div class="boutonsAction">
                 <button class="bouton">RECHERCHER</button>
-                <a class="bouton" href="./index.php">REINITIALISER</a>
+                <a class="bouton" href="./index.php">RÉINITIALISER</a>
             </div>
 
 
@@ -185,28 +185,29 @@ require('./config/dbconnexion.php')
             $req = $bdd->query($requete); // WHERE email = :email ORDER BY datearrivee
             while ($donnees = $req->fetch()) { ?>
                 <div class="carteBanque">
-                    <h3 style="padding:0;margin:0;"><?php echo $donnees['nom'] ?></h3>
+                    <h3 style="padding:0; margin:0; color:#448B2A"><?php echo $donnees['nom'] ?></h3>
                     <hr />
                     <div class="informationsBanque">
+                      
                         <div class="informationItem">
-                            <b>Valeurs : </b> <?php echo $donnees['valeurs'] ?> 
+                            <b>Plafond &nbsp; &nbsp;  </b> <span style="font-size: 20px"><?php echo $donnees['plafond'] ?></span>
                         </div>
                         <div class="informationItem">
-                            <b>Type d'actif : </b> <?php echo $donnees['actif'] ?>
+                            <b>Type d'actif &nbsp; &nbsp; </b> <?php echo $donnees['actif'] ?>
                         </div>
                         <div class="informationItem">
-                            <b>Plafond : </b> <?php echo $donnees['plafond'] ?>
+                            <b>Taux brut / 1 an &nbsp; &nbsp; </b> <span style="font-size: 20px; color:#448B2A"><?php echo $donnees['taux'] ?>%</span>
                         </div>
                         <div class="informationItem">
-                            <b>Taux brut pour 1 an (%) : </b> <?php echo $donnees['taux'] ?>
+                            <b>Valeurs  &nbsp; &nbsp; </b> <?php echo $donnees['valeurs'] ?> 
                         </div>
                         <div class="informationItem">
-                            <b>Niveau de risque : </b> <?php echo $donnees['risque'] ?>
-                        </div>
+                            <b>Niveau de risque &nbsp; &nbsp;</b> <span style="font-size: 20px"><?php echo $donnees['risque'] ?></span>
+                        </div> 
                     </div>
 
                     <div class="informationItem" style="grid-column: auto / auto;">
-                        <b>Engagements : </b> <span style="text-align:justify !important;"><?php echo $donnees['engagements'] ?></span>
+                        <b>Engagements &nbsp; &nbsp; </b> <span style="text-align:justify !important;"><?php echo $donnees['engagements'] ?></span>
                     </div>
                 </div>
 
