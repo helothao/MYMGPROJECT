@@ -1,4 +1,4 @@
-<header class="u-clearfix u-header u-header" style="background: white;border-bottom: 10px solid #448B2B;" id="sec-238b">
+<header class="u-clearfix u-header u-header" id="sec-238b">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1326" data-image-height="882">
         <img src="./images/logo.png" class="u-logo-image u-logo-image-1"
